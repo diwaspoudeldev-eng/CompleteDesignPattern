@@ -1,4 +1,5 @@
 using CustomerFactory;
+using InterfaceLayer;
 using MiddleLayer;
 
 namespace WindowsForm
@@ -7,8 +8,8 @@ namespace WindowsForm
     {
         //private Customer cust = null;
         //private Lead lead = null;
-        private CustomerBase cust = null;
-
+        //private CustomerBase cust = null;
+        private ICustomer cust = null;
         public FormCustomer()
         {
             InitializeComponent();
@@ -59,7 +60,8 @@ namespace WindowsForm
             //}
 
             //Factory pattern implementation
-            Factory.Create(cmbCustomerType.Text);
+            //Factory.Create(cmbCustomerType.Text);
+            cust = Factory.Create(cmbCustomerType.Text);
         }
         private void FrmCustomer_Load(object sender, EventArgs e)
         {

@@ -1,11 +1,12 @@
-﻿using MiddleLayer;
+﻿using InterfaceLayer;
+using MiddleLayer;
 
 namespace CustomerFactory
 {
     public static class Factory
     {
      
-        public static CustomerBase Create(string typeOfCustomer) //Faction method to create instances of Lead or Customer based on the input string
+        public static ICustomer Create(string typeOfCustomer) //Faction method to create instances of Lead or Customer based on the input string
         {
             // Simple factory method to create instances of Lead or Customer based on the input string
             if (typeOfCustomer == "Lead")
