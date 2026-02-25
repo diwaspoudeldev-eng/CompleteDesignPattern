@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\WindowsForm.csproj": {}
+    "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\WindowsForm\\WindowsForm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.csproj": {
+    "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\MiddleLayer\\MiddleLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.csproj",
+        "projectUniqueName": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\MiddleLayer\\MiddleLayer.csproj",
         "projectName": "MiddleLayer",
-        "projectPath": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.csproj",
-        "packagesPath": "C:\\Users\\dpoudel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\obj\\",
+        "projectPath": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\MiddleLayer\\MiddleLayer.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\MiddleLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dpoudel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -343,20 +344,20 @@
         }
       }
     },
-    "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\WindowsForm.csproj": {
+    "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\WindowsForm\\WindowsForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\WindowsForm.csproj",
+        "projectUniqueName": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\WindowsForm\\WindowsForm.csproj",
         "projectName": "WindowsForm",
-        "projectPath": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\WindowsForm.csproj",
-        "packagesPath": "C:\\Users\\dpoudel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\obj\\",
+        "projectPath": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\WindowsForm\\WindowsForm.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\WindowsForm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dpoudel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -365,14 +366,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0-windows7.0": {
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.csproj": {
-                "projectPath": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.csproj"
+              "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\MiddleLayer\\MiddleLayer.csproj": {
+                "projectPath": "D:\\Projects\\Personal\\Practice\\CompleteDesignPattern\\MiddleLayer\\MiddleLayer.csproj"
               }
             }
           }
