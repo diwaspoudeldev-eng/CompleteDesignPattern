@@ -1,6 +1,8 @@
-﻿namespace MiddleLayer;
+﻿using InterfaceLayer;
 
-public class CustomerBase
+namespace MiddleLayer;
+
+public class CustomerBase: ICustomer
 {
     public string CustomerName { get; set; }
     public string PhoneNumber { get; set; }
