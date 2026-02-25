@@ -1,6 +1,5 @@
 using CustomerFactory;
 using InterfaceLayer;
-using MiddleLayer;
 
 namespace WindowsForm
 {
@@ -33,17 +32,9 @@ namespace WindowsForm
         {
             cust.CustomerName = txtCustomerName.Text;
             cust.PhoneNumber = txtPhoneNumber.Text;
-
-            if(cust is Customer customer)
-            {
-                 customer.BillDate = Convert.ToDateTime(txtBillingDate.Text);
-                 customer.BillAmount = Convert.ToDecimal(txtBillingAmount.Text);
-                 customer.Address = txtAddress.Text;
-            }
-
-            //cust.BillDate = Convert.ToDateTime(txtBillingDate.Text);
-            //cust.BillAmount = Convert.ToDecimal(txtBillingAmount.Text);
-            //cust.Address = txtAddress.Text;
+            cust.BillDate = string.IsNullOrWhiteSpace(txtBillingDate.Text) ? null : Convert.ToDateTime(txtBillingDate.Text);
+            cust.BillAmount = string.IsNullOrWhiteSpace(txtBillingAmount.Text) ? null : Convert.ToDecimal(txtBillingAmount.Text);
+            cust.Address = txtAddress.Text;
         }
 
         private void cmbCustomerType_SelectedIndexChanged(object sender, EventArgs e)
