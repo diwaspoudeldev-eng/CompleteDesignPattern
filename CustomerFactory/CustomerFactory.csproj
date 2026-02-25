@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InterfaceLayer\InterfaceLayer.csproj" />
+    <ProjectReference Include="..\MiddleLayer\MiddleLayer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,14 @@
-using MiddleLayer;
+using CustomerFactory;
+using InterfaceLayer;
 
 namespace WindowsForm
 {
     public partial class FormCustomer : Form
     {
-        private Customer cust = null;
-        private Lead lead = null;
-
+        //private Customer cust = null;
+        //private Lead lead = null;
+        //private CustomerBase cust = null;
+        private ICustomer cust = null;
         public FormCustomer()
         {
             InitializeComponent();
@@ -17,7 +19,7 @@ namespace WindowsForm
             try
             {
                 SetCustomer();
-                cust.Validate();
+                cust.Validate(); // RIP Pattern, Polymorphism, Liskov Substitution Principle
             }
             catch (Exception ex)
             {
@@ -30,23 +32,27 @@ namespace WindowsForm
         {
             cust.CustomerName = txtCustomerName.Text;
             cust.PhoneNumber = txtPhoneNumber.Text;
-            cust.BillDate = Convert.ToDateTime(txtBillingDate.Text);
-            cust.BillAmount = Convert.ToDecimal(txtBillingAmount.Text);
+            cust.BillDate = string.IsNullOrWhiteSpace(txtBillingDate.Text) ? null : Convert.ToDateTime(txtBillingDate.Text);
+            cust.BillAmount = string.IsNullOrWhiteSpace(txtBillingAmount.Text) ? null : Convert.ToDecimal(txtBillingAmount.Text);
             cust.Address = txtAddress.Text;
         }
 
         private void cmbCustomerType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbCustomerType.Text == "Lead")
-            {
-                lead = new Lead();
-                cust = null;
-            }
-            else if (cmbCustomerType.Text == "Customer")
-            {
-                cust = new Customer();
-                lead = null;
-            }
+            //if (cmbCustomerType.Text == "Lead")
+            //{
+            //    lead = new Lead();
+            //    cust = null;
+            //}
+            //else if (cmbCustomerType.Text == "Customer")
+            //{
+            //    cust = new Customer();
+            //    lead = null;
+            //}
+
+            //Factory pattern implementation
+            //Factory.Create(cmbCustomerType.Text);
+            cust = Factory.Create(cmbCustomerType.Text);
         }
         private void FrmCustomer_Load(object sender, EventArgs e)
         {

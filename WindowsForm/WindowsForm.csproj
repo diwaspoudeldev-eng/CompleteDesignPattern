@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MiddleLayer\MiddleLayer.csproj" />
+    <ProjectReference Include="..\CustomerFactory\CustomerFactory.csproj" />
   </ItemGroup>
 
 </Project>
