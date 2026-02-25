@@ -2,39 +2,56 @@
 
 namespace MiddleLayer;
 
-public class CustomerBase: ICustomer
+public class LeadValidation : IValidation<ICustomer>
 {
-    public string CustomerName { get; set; }
-    public string PhoneNumber { get; set; }
+    public void Validate(ICustomer entity)
+    {
+        if (string.IsNullOrWhiteSpace(entity.CustomerName))
+            throw new Exception("Customer Name is required");
+
+        if (string.IsNullOrWhiteSpace(entity.PhoneNumber))
+            throw new Exception("Phone Number is required");
+    }
+}
+
+public class CustomerValidation : IValidation<ICustomer>
+{
+    public void Validate(ICustomer entity)
+    {
+        if (string.IsNullOrWhiteSpace(entity.CustomerName))
+            throw new Exception("Customer Name is required");
+
+        if (string.IsNullOrWhiteSpace(entity.PhoneNumber))
+            throw new Exception("Phone Number is required");
+
+        if (entity.BillAmount == null || entity.BillAmount == 0)
+        {
+            throw new Exception("Bill Amount is Required");
+        }
+        if (entity.BillDate == null || entity.BillDate > DateTime.Now)
+        {
+            throw new Exception("Bill Date is Required and cannot be in future");
+        }
+    }
+}
+
+public class CustomerBase : ICustomer
+{
+    public string CustomerName { get; set; } = "";
+    public string PhoneNumber { get; set; } = "";
     public decimal? BillAmount { get; set; }
     public DateTime? BillDate { get; set; }
-    public string Address { get; set; }
+    public string Address { get; set; } = "";
+    public IValidation<ICustomer> Validation { get; set; }
 
     public virtual void Validate()
     {
-        if (string.IsNullOrWhiteSpace(CustomerName))
-            throw new Exception("Customer Name is required");
-
-        if (string.IsNullOrWhiteSpace(PhoneNumber))
-            throw new Exception("Phone Number is required");
+        Validation.Validate(this);
     }
 }
 
 public class Customer : CustomerBase
 {
-
-    public override void Validate()
-    {
-        base.Validate();
-        if (BillAmount == null)
-        {
-            throw new Exception("BillAmount is Required");
-        }
-        if (BillDate > DateTime.Now)
-        {
-            throw new Exception("BillDate is Required");
-        }
-    }
 }
 
 public class Lead : CustomerBase

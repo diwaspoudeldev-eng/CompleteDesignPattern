@@ -7,6 +7,7 @@
         decimal? BillAmount { get; set; }
         DateTime? BillDate { get; set; }
         string Address { get; set; }
+        IValidation<ICustomer> Validation { get; set; }
         void Validate();
     }
 }
