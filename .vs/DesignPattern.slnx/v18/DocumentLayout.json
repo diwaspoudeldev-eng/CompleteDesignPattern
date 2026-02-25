@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|c:\\users\\dpoudel\\source\\repos\\designpattern\\windowsform\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|c:\\users\\dpoudel\\source\\repos\\designpattern\\windowsform\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|c:\\users\\dpoudel\\source\\repos\\designpattern\\windowsform\\windowsform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\windowsform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|c:\\users\\dpoudel\\source\\repos\\designpattern\\windowsform\\formcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\formcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|c:\\users\\dpoudel\\source\\repos\\designpattern\\windowsform\\formcustomer.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{AA0040CF-D497-B7DD-CD5D-3B1E2DE1A68D}|WindowsForm\\WindowsForm.csproj|solutionrelative:windowsform\\formcustomer.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55BFC5C-7A92-4D84-9990-A75D1BC60308}|MiddleLayer\\MiddleLayer.csproj|c:\\users\\dpoudel\\source\\repos\\designpattern\\middlelayer\\middlelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55BFC5C-7A92-4D84-9990-A75D1BC60308}|MiddleLayer\\MiddleLayer.csproj|solutionrelative:middlelayer\\middlelayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WindowsForm",
+              "DocumentMoniker": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\WindowsForm.csproj",
+              "RelativeDocumentMoniker": "WindowsForm\\WindowsForm.csproj",
+              "ToolTip": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\WindowsForm.csproj",
+              "RelativeToolTip": "WindowsForm\\WindowsForm.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-25T20:43:46.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCustomer.resx",
+              "DocumentMoniker": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.resx",
+              "RelativeDocumentMoniker": "WindowsForm\\FormCustomer.resx",
+              "ToolTip": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.resx",
+              "RelativeToolTip": "WindowsForm\\FormCustomer.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-02-25T20:41:52.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\FormCustomer.cs",
+              "ToolTip": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.cs",
+              "RelativeToolTip": "WindowsForm\\FormCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:41:48.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCustomer.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\FormCustomer.Designer.cs",
+              "ToolTip": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.Designer.cs",
+              "RelativeToolTip": "WindowsForm\\FormCustomer.Designer.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAswL8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:40:29.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MiddleLayer.cs",
+              "DocumentMoniker": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.cs",
+              "RelativeDocumentMoniker": "MiddleLayer\\MiddleLayer.cs",
+              "ToolTip": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\MiddleLayer\\MiddleLayer.cs",
+              "RelativeToolTip": "MiddleLayer\\MiddleLayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:40:15.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.cs",
+              "RelativeDocumentMoniker": "WindowsForm\\FormCustomer.cs",
+              "ToolTip": "C:\\Users\\dpoudel\\source\\repos\\DesignPattern\\WindowsForm\\FormCustomer.cs [Design]",
+              "RelativeToolTip": "WindowsForm\\FormCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T20:38:39.91Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

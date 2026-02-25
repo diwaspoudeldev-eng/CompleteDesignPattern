@@ -1,0 +1,11 @@
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\bin\Debug\net10.0\MiddleLayer.deps.json
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\bin\Debug\net10.0\MiddleLayer.dll
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\bin\Debug\net10.0\MiddleLayer.pdb
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\MiddleLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\MiddleLayer.AssemblyInfoInputs.cache
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\MiddleLayer.AssemblyInfo.cs
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\MiddleLayer.csproj.CoreCompileInputs.cache
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\MiddleLayer.dll
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\refint\MiddleLayer.dll
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\MiddleLayer.pdb
+C:\Users\dpoudel\source\repos\DesignPattern\MiddleLayer\obj\Debug\net10.0\ref\MiddleLayer.dll

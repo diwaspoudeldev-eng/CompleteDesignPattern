@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MiddleLayer/MiddleLayer.csproj" Id="c55bfc5c-7a92-4d84-9990-a75d1bc60308" />
+  <Project Path="WindowsForm/WindowsForm.csproj" />
+</Solution>
