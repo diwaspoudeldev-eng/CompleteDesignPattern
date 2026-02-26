@@ -13,14 +13,17 @@ namespace WindowsForm
             ApplicationConfiguration.Initialize();
 
             // Typical connection string setup (in a real app, read from config)
-            string connStr = "Data Source=localhost;Initial Catalog=DesignPatternDB;Integrated Security=True;";
+            string connStr = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DesignPatternDB;Integrated Security=True;";
 
-            // Instantiate the repository (Composition Root)
-            InterfaceDAL.IRepository<InterfaceLayer.ICustomer> repository = 
+            // Instantiate both repositories
+            InterfaceDAL.IRepository<InterfaceLayer.ICustomer> adoRepository = 
                 new Repository.AdoRepository<InterfaceLayer.ICustomer>(connStr);
+            
+            InterfaceDAL.IRepository<InterfaceLayer.ICustomer> efRepository = 
+                new Repository.EfRepository<InterfaceLayer.ICustomer>(connStr);
 
-            // Inject the repository into the Main Form
-            Application.Run(new FormCustomer(repository));
+            // Inject both repositories into the Main Form
+            Application.Run(new FormCustomer(adoRepository, efRepository));
         }
     }
 }

@@ -43,6 +43,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbCustomerType = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbDALType = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -179,6 +181,28 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Customer Type";
             // 
+            // cmbDALType
+            // 
+            this.cmbDALType.FormattingEnabled = true;
+            this.cmbDALType.Items.AddRange(new object[] {
+            "ADO",
+            "EF"});
+            this.cmbDALType.Location = new System.Drawing.Point(650, 11);
+            this.cmbDALType.Name = "cmbDALType";
+            this.cmbDALType.Size = new System.Drawing.Size(146, 24);
+            this.cmbDALType.TabIndex = 39;
+            this.cmbDALType.Text = "ADO";
+            this.cmbDALType.SelectedIndexChanged += new System.EventHandler(this.cmbDALType_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(570, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 17);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "DAL Type";
+            // 
             // FrmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -199,6 +223,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbCustomerType);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbDALType);
+            this.Controls.Add(this.label7);
             this.Name = "Customer";
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.FrmCustomer_Load);
@@ -224,5 +250,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbCustomerType;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbDALType;
+        private System.Windows.Forms.Label label7;
     }
 }
