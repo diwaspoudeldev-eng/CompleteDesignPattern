@@ -1,6 +1,8 @@
 <Solution>
   <Project Path="CustomerFactory/CustomerFactory.csproj" Id="a5e796ff-c37d-43e7-a1ed-c086ec926a2a" />
+  <Project Path="InterfaceDAL/InterfaceDAL.csproj" Id="f9b399ea-fc8b-4ee0-abe9-d5baf36dfaed" />
   <Project Path="InterfaceLayer/InterfaceLayer.csproj" Id="b63d84c8-055a-4aa4-a7ab-ab4ae41474a5" />
   <Project Path="MiddleLayer/MiddleLayer.csproj" Id="c55bfc5c-7a92-4d84-9990-a75d1bc60308" />
+  <Project Path="Repository/Repository.csproj" Id="eccecb32-524e-47a0-8640-a18ba3303b24" />
   <Project Path="WindowsForm/WindowsForm.csproj" />
 </Solution>

@@ -1,5 +1,6 @@
 using CustomerFactory;
 using InterfaceLayer;
+using InterfaceDAL;
 
 namespace WindowsForm
 {
@@ -9,9 +10,26 @@ namespace WindowsForm
         //private Lead lead = null;
         //private CustomerBase cust = null;
         private ICustomer cust = null;
-        public FormCustomer()
+        private readonly IRepository<ICustomer> _adoRepository;
+        private readonly IRepository<ICustomer> _efRepository;
+
+        public FormCustomer(IRepository<ICustomer> adoRepository, IRepository<ICustomer> efRepository)
         {
             InitializeComponent();
+            _adoRepository = adoRepository;
+            _efRepository = efRepository;
+        }
+
+        private void LoadGrid()
+        {
+            IRepository<ICustomer> repo = cmbDALType.Text == "ADO" ? _adoRepository : _efRepository;
+            var data = repo.GetAll();
+            dataGridView1.DataSource = data != null ? data.ToList() : new List<ICustomer>();
+        }
+
+        private void cmbDALType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadGrid();
         }
 
         private void btnValidate_Click(object sender, EventArgs e)
@@ -51,12 +69,32 @@ namespace WindowsForm
             //}
 
             //Factory pattern implementation
-            //Factory.Create(cmbCustomerType.Text);
             cust = Factory.Create(cmbCustomerType.Text);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SetCustomer();
+                cust.Validate(); // Make sure it's valid first
+                
+                // Using the selected Repository
+                IRepository<ICustomer> repo = cmbDALType.Text == "ADO" ? _adoRepository : _efRepository;
+                repo.Add(cust);
+                
+                MessageBox.Show("Customer successfully added to database!");
+                LoadGrid(); // Refresh grid
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+        }
+
         private void FrmCustomer_Load(object sender, EventArgs e)
         {
-
+            LoadGrid();
         }
     }
 }
