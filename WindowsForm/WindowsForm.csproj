@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CustomerFactory\CustomerFactory.csproj" />
+    <ProjectReference Include="..\InterfaceDAL\InterfaceDAL.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 
 </Project>

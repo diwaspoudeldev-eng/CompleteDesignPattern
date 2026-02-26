@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnValidate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,6 +55,16 @@
             this.btnValidate.Text = "Validate";
             this.btnValidate.UseVisualStyleBackColor = true;
             this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(160, 115);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(131, 35);
+            this.btnAdd.TabIndex = 38;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dataGridView1
             // 
@@ -174,6 +185,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 423);
             this.Controls.Add(this.btnValidate);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label6);
@@ -198,6 +210,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnValidate;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label6;

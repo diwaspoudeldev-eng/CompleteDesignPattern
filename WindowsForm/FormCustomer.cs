@@ -1,5 +1,6 @@
 using CustomerFactory;
 using InterfaceLayer;
+using InterfaceDAL;
 
 namespace WindowsForm
 {
@@ -9,9 +10,12 @@ namespace WindowsForm
         //private Lead lead = null;
         //private CustomerBase cust = null;
         private ICustomer cust = null;
-        public FormCustomer()
+        private readonly IRepository<ICustomer> _repository;
+
+        public FormCustomer(IRepository<ICustomer> repository)
         {
             InitializeComponent();
+            _repository = repository;
         }
 
         private void btnValidate_Click(object sender, EventArgs e)
@@ -51,9 +55,27 @@ namespace WindowsForm
             //}
 
             //Factory pattern implementation
-            //Factory.Create(cmbCustomerType.Text);
             cust = Factory.Create(cmbCustomerType.Text);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SetCustomer();
+                cust.Validate(); // Make sure it's valid first
+                
+                // Using the injected Generic Repository
+                _repository.Add(cust);
+                
+                MessageBox.Show("Customer successfully added to database!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+        }
+
         private void FrmCustomer_Load(object sender, EventArgs e)
         {
 
