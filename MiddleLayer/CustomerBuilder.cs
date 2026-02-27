@@ -1,6 +1,5 @@
 using System;
 using InterfaceLayer;
-using CustomerFactory;
 
 namespace MiddleLayer
 {
@@ -8,10 +7,9 @@ namespace MiddleLayer
     {
         private ICustomer _customer;
 
-        public CustomerBuilder(string customerType)
+        public CustomerBuilder(ICustomer customer)
         {
-            // The Builder can use the Factory to get the right starting object
-            _customer = Factory.Create(customerType);
+            _customer = customer;
         }
 
         public ICustomerBuilder WithId(int id)

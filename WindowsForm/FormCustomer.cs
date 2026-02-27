@@ -79,7 +79,8 @@ namespace WindowsForm
             //cust.Address = txtAddress.Text;
 
             // Using the Builder Pattern for fluent construction
-            cust = new CustomerBuilder(cmbCustomerType.Text)
+            // First we use the Factory to create the correct instance, then build it
+            cust = new CustomerBuilder(Factory.Create(cmbCustomerType.Text))
                 .WithId(string.IsNullOrWhiteSpace(txtId.Text) ? 0 : Convert.ToInt32(txtId.Text))
                 .WithName(txtCustomerName.Text)
                 .WithPhone(txtPhoneNumber.Text)
@@ -191,6 +192,40 @@ namespace WindowsForm
                 
                 MessageBox.Show("Customer object cloned and added to in-memory list!");
             }
+        }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+            // Builder Pattern: Generating a report step-by-step
+            IReportBuilder builder = new CsvReportBuilder();
+
+            // 1. Add Header
+            builder.AddHeader(new string[] { "ID", "Name", "Phone", "Amount", "Date", "Address" });
+
+            // 2. Add Rows from DataGridView
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                string[] columns = new string[]
+                {
+                    row.Cells["Id"].Value?.ToString() ?? "0",
+                    row.Cells["CustomerName"].Value?.ToString() ?? "",
+                    row.Cells["PhoneNumber"].Value?.ToString() ?? "",
+                    row.Cells["BillAmount"].Value?.ToString() ?? "0",
+                    row.Cells["BillDate"].Value?.ToString() ?? "",
+                    row.Cells["Address"].Value?.ToString() ?? ""
+                };
+                builder.AddRow(columns);
+            }
+
+            // 3. Add Footer
+            builder.AddFooter($"Total Records: {dataGridView1.Rows.Count - (dataGridView1.AllowUserToAddRows ? 1 : 0)}");
+
+            // 4. Get the final complex object (the string report)
+            string report = builder.GetReport();
+
+            MessageBox.Show(report, "Generated CSV Report");
         }
 
         private void FrmCustomer_Load(object sender, EventArgs e)

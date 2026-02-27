@@ -33,6 +33,7 @@
             btnAddInmemory = new Button();
             btnBatchSave = new Button();
             btnCloneAndSave = new Button();
+            btnGenerateReport = new Button();
             txtId = new TextBox();
             label8 = new Label();
             dataGridView1 = new DataGridView();
@@ -107,6 +108,17 @@
             btnCloneAndSave.Text = "Clone & Add";
             btnCloneAndSave.UseVisualStyleBackColor = true;
             btnCloneAndSave.Click += btnCloneAndSave_Click;
+            // 
+            // btnGenerateReport
+            // 
+            btnGenerateReport.Location = new Point(23, 215);
+            btnGenerateReport.Margin = new Padding(3, 4, 3, 4);
+            btnGenerateReport.Name = "btnGenerateReport";
+            btnGenerateReport.Size = new Size(160, 34);
+            btnGenerateReport.TabIndex = 47;
+            btnGenerateReport.Text = "Generate CSV Report";
+            btnGenerateReport.UseVisualStyleBackColor = true;
+            btnGenerateReport.Click += btnGenerateReport_Click;
             // 
             // txtId
             // 
@@ -276,6 +288,7 @@
             Controls.Add(btnAddInmemory);
             Controls.Add(btnBatchSave);
             Controls.Add(btnCloneAndSave);
+            Controls.Add(btnGenerateReport);
             Controls.Add(dataGridView1);
             Controls.Add(txtAddress);
             Controls.Add(label6);
@@ -309,6 +322,7 @@
         private System.Windows.Forms.Button btnAddInmemory;
         private System.Windows.Forms.Button btnBatchSave;
         private System.Windows.Forms.Button btnCloneAndSave;
+        private System.Windows.Forms.Button btnGenerateReport;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label6;
