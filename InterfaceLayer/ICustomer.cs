@@ -10,5 +10,6 @@
         string Address { get; set; }
         IValidation<ICustomer> Validation { get; set; }
         void Validate();
+        ICustomer Clone();
     }
 }

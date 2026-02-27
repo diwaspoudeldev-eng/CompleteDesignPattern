@@ -32,6 +32,7 @@
             btnAdd = new Button();
             btnAddInmemory = new Button();
             btnBatchSave = new Button();
+            btnCloneAndSave = new Button();
             txtId = new TextBox();
             label8 = new Label();
             dataGridView1 = new DataGridView();
@@ -96,6 +97,17 @@
             btnBatchSave.UseVisualStyleBackColor = true;
             btnBatchSave.Click += btnBatchSave_Click;
             // 
+            // btnCloneAndSave
+            // 
+            btnCloneAndSave.Location = new Point(639, 201);
+            btnCloneAndSave.Margin = new Padding(3, 4, 3, 4);
+            btnCloneAndSave.Name = "btnCloneAndSave";
+            btnCloneAndSave.Size = new Size(128, 34);
+            btnCloneAndSave.TabIndex = 46;
+            btnCloneAndSave.Text = "Clone & Add";
+            btnCloneAndSave.UseVisualStyleBackColor = true;
+            btnCloneAndSave.Click += btnCloneAndSave_Click;
+            // 
             // txtId
             // 
             txtId.Location = new Point(650, 60);
@@ -117,12 +129,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(23, 201);
+            dataGridView1.Location = new Point(23, 257);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 24;
-            dataGridView1.Size = new Size(781, 312);
+            dataGridView1.Size = new Size(781, 256);
             dataGridView1.TabIndex = 32;
             // 
             // txtAddress
@@ -263,6 +275,7 @@
             Controls.Add(btnAdd);
             Controls.Add(btnAddInmemory);
             Controls.Add(btnBatchSave);
+            Controls.Add(btnCloneAndSave);
             Controls.Add(dataGridView1);
             Controls.Add(txtAddress);
             Controls.Add(label6);
@@ -295,6 +308,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnAddInmemory;
         private System.Windows.Forms.Button btnBatchSave;
+        private System.Windows.Forms.Button btnCloneAndSave;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label6;

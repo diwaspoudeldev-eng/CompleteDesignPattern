@@ -161,6 +161,26 @@ namespace WindowsForm
             }
         }
 
+        private void btnCloneAndSave_Click(object sender, EventArgs e)
+        {
+            if (cust != null)
+            {
+                // Sync UI to object before cloning
+                SetCustomer();
+
+                // Prototype Pattern: Cloning the existing object
+                ICustomer clonedCust = cust.Clone();
+                clonedCust.Id = 0; // Cloned item is new
+
+                // Add to in-memory collection immediately
+                _customers.Add(clonedCust);
+
+                LoadGrid(); // Refresh grid to show the new duplicate
+                
+                MessageBox.Show("Customer object cloned and added to in-memory list!");
+            }
+        }
+
         private void FrmCustomer_Load(object sender, EventArgs e)
         {
             LoadGrid();

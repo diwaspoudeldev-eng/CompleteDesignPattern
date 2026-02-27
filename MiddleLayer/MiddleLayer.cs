@@ -119,6 +119,11 @@ public class CustomerBase : ICustomer
     {
         Validation.Validate(this);
     }
+
+    public virtual ICustomer Clone()
+    {
+        return (ICustomer)this.MemberwiseClone();
+    }
 }
 
 public class Customer : CustomerBase
