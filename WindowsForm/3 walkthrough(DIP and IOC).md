@@ -97,3 +97,6 @@ No matter whether `Factory.Create()` returned a `Lead` (which implies different 
 
 1. **Before**: UI dynamically instantiates classes using `new Lead()` - leading to a tightly coupled architecture.
 2. **After**: The Factory handles object creation, returning `ICustomer`. The `UI` surrenders instantiation control (IoC) to the `Factory` layer, promoting a scalable and easily testable structure.
+
+
+

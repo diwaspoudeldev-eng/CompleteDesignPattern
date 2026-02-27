@@ -22,7 +22,8 @@ namespace WindowsForm
             InterfaceDAL.IRepository<InterfaceLayer.ICustomer> efRepository = 
                 new Repository.EfRepository<InterfaceLayer.ICustomer>(connStr);
 
-            // Inject both repositories into the Main Form
+            // Inject both repositories into the Facade Form
+            //Application.Run(new FacadeForm(adoRepository, efRepository));
             Application.Run(new FormCustomer(adoRepository, efRepository));
         }
     }
