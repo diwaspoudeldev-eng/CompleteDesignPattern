@@ -28,209 +28,217 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnValidate = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtBillingDate = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBillingAmount = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCustomerName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbCustomerType = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbDALType = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            btnValidate = new Button();
+            btnAdd = new Button();
+            dataGridView1 = new DataGridView();
+            txtAddress = new TextBox();
+            label6 = new Label();
+            txtBillingDate = new TextBox();
+            label5 = new Label();
+            txtBillingAmount = new TextBox();
+            label4 = new Label();
+            txtPhoneNumber = new TextBox();
+            label3 = new Label();
+            txtCustomerName = new TextBox();
+            label2 = new Label();
+            cmbCustomerType = new ComboBox();
+            label1 = new Label();
+            cmbDALType = new ComboBox();
+            label7 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // btnValidate
             // 
-            this.btnValidate.Location = new System.Drawing.Point(23, 115);
-            this.btnValidate.Name = "btnValidate";
-            this.btnValidate.Size = new System.Drawing.Size(131, 35);
-            this.btnValidate.TabIndex = 37;
-            this.btnValidate.Text = "Validate";
-            this.btnValidate.UseVisualStyleBackColor = true;
-            this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
+            btnValidate.Location = new Point(23, 144);
+            btnValidate.Margin = new Padding(3, 4, 3, 4);
+            btnValidate.Name = "btnValidate";
+            btnValidate.Size = new Size(131, 44);
+            btnValidate.TabIndex = 37;
+            btnValidate.Text = "Validate";
+            btnValidate.UseVisualStyleBackColor = true;
+            btnValidate.Click += btnValidate_Click;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(160, 115);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(131, 35);
-            this.btnAdd.TabIndex = 38;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new Point(160, 144);
+            btnAdd.Margin = new Padding(3, 4, 3, 4);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(131, 44);
+            btnAdd.TabIndex = 38;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 161);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(781, 250);
-            this.dataGridView1.TabIndex = 32;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(23, 201);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 24;
+            dataGridView1.Size = new Size(781, 312);
+            dataGridView1.TabIndex = 32;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(393, 83);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(203, 67);
-            this.txtAddress.TabIndex = 27;
+            txtAddress.Location = new Point(393, 104);
+            txtAddress.Margin = new Padding(3, 4, 3, 4);
+            txtAddress.Multiline = true;
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(203, 83);
+            txtAddress.TabIndex = 27;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(309, 83);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 17);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Address";
+            label6.AutoSize = true;
+            label6.Location = new Point(309, 104);
+            label6.Name = "label6";
+            label6.Size = new Size(62, 20);
+            label6.TabIndex = 31;
+            label6.Text = "Address";
             // 
             // txtBillingDate
             // 
-            this.txtBillingDate.Location = new System.Drawing.Point(393, 48);
-            this.txtBillingDate.Name = "txtBillingDate";
-            this.txtBillingDate.Size = new System.Drawing.Size(146, 22);
-            this.txtBillingDate.TabIndex = 25;
-            this.txtBillingDate.Text = "1/1/2010";
+            txtBillingDate.Location = new Point(393, 60);
+            txtBillingDate.Margin = new Padding(3, 4, 3, 4);
+            txtBillingDate.Name = "txtBillingDate";
+            txtBillingDate.Size = new Size(146, 27);
+            txtBillingDate.TabIndex = 25;
+            txtBillingDate.Text = "1/1/2010";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(309, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 17);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Bill Date";
+            label5.AutoSize = true;
+            label5.Location = new Point(309, 60);
+            label5.Name = "label5";
+            label5.Size = new Size(66, 20);
+            label5.TabIndex = 30;
+            label5.Text = "Bill Date";
             // 
             // txtBillingAmount
             // 
-            this.txtBillingAmount.Location = new System.Drawing.Point(393, 14);
-            this.txtBillingAmount.Name = "txtBillingAmount";
-            this.txtBillingAmount.Size = new System.Drawing.Size(146, 22);
-            this.txtBillingAmount.TabIndex = 22;
-            this.txtBillingAmount.Text = "0";
+            txtBillingAmount.Location = new Point(393, 18);
+            txtBillingAmount.Margin = new Padding(3, 4, 3, 4);
+            txtBillingAmount.Name = "txtBillingAmount";
+            txtBillingAmount.Size = new Size(146, 27);
+            txtBillingAmount.TabIndex = 22;
+            txtBillingAmount.Text = "0";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(309, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 17);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Bill Amount";
+            label4.AutoSize = true;
+            label4.Location = new Point(309, 18);
+            label4.Name = "label4";
+            label4.Size = new Size(87, 20);
+            label4.TabIndex = 28;
+            label4.Text = "Bill Amount";
             // 
             // txtPhoneNumber
             // 
-            this.txtPhoneNumber.Location = new System.Drawing.Point(147, 83);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(146, 22);
-            this.txtPhoneNumber.TabIndex = 26;
+            txtPhoneNumber.Location = new Point(147, 104);
+            txtPhoneNumber.Margin = new Padding(3, 4, 3, 4);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new Size(146, 27);
+            txtPhoneNumber.TabIndex = 26;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 17);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Phone number";
+            label3.AutoSize = true;
+            label3.Location = new Point(19, 104);
+            label3.Name = "label3";
+            label3.Size = new Size(105, 20);
+            label3.TabIndex = 24;
+            label3.Text = "Phone number";
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(147, 48);
-            this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(146, 22);
-            this.txtCustomerName.TabIndex = 23;
+            txtCustomerName.Location = new Point(147, 60);
+            txtCustomerName.Margin = new Padding(3, 4, 3, 4);
+            txtCustomerName.Name = "txtCustomerName";
+            txtCustomerName.Size = new Size(146, 27);
+            txtCustomerName.TabIndex = 23;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 17);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Customer Name";
+            label2.AutoSize = true;
+            label2.Location = new Point(19, 60);
+            label2.Name = "label2";
+            label2.Size = new Size(116, 20);
+            label2.TabIndex = 21;
+            label2.Text = "Customer Name";
             // 
             // cmbCustomerType
             // 
-            this.cmbCustomerType.FormattingEnabled = true;
-            this.cmbCustomerType.Items.AddRange(new object[] {
-            "Lead",
-            "Customer"});
-            this.cmbCustomerType.Location = new System.Drawing.Point(147, 11);
-            this.cmbCustomerType.Name = "cmbCustomerType";
-            this.cmbCustomerType.Size = new System.Drawing.Size(146, 24);
-            this.cmbCustomerType.TabIndex = 20;
-            this.cmbCustomerType.SelectedIndexChanged += new System.EventHandler(this.cmbCustomerType_SelectedIndexChanged);
+            cmbCustomerType.FormattingEnabled = true;
+            cmbCustomerType.Items.AddRange(new object[] { "Lead", "Customer", "Self Service", "Home Delivery" });
+            cmbCustomerType.Location = new Point(147, 14);
+            cmbCustomerType.Margin = new Padding(3, 4, 3, 4);
+            cmbCustomerType.Name = "cmbCustomerType";
+            cmbCustomerType.Size = new Size(146, 28);
+            cmbCustomerType.TabIndex = 20;
+            cmbCustomerType.SelectedIndexChanged += cmbCustomerType_SelectedIndexChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 17);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Customer Type";
+            label1.AutoSize = true;
+            label1.Location = new Point(19, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(107, 20);
+            label1.TabIndex = 19;
+            label1.Text = "Customer Type";
             // 
             // cmbDALType
             // 
-            this.cmbDALType.FormattingEnabled = true;
-            this.cmbDALType.Items.AddRange(new object[] {
-            "ADO",
-            "EF"});
-            this.cmbDALType.Location = new System.Drawing.Point(650, 11);
-            this.cmbDALType.Name = "cmbDALType";
-            this.cmbDALType.Size = new System.Drawing.Size(146, 24);
-            this.cmbDALType.TabIndex = 39;
-            this.cmbDALType.Text = "ADO";
-            this.cmbDALType.SelectedIndexChanged += new System.EventHandler(this.cmbDALType_SelectedIndexChanged);
+            cmbDALType.FormattingEnabled = true;
+            cmbDALType.Items.AddRange(new object[] { "ADO", "EF" });
+            cmbDALType.Location = new Point(650, 14);
+            cmbDALType.Margin = new Padding(3, 4, 3, 4);
+            cmbDALType.Name = "cmbDALType";
+            cmbDALType.Size = new Size(146, 28);
+            cmbDALType.TabIndex = 39;
+            cmbDALType.Text = "ADO";
+            cmbDALType.SelectedIndexChanged += cmbDALType_SelectedIndexChanged;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(570, 11);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 17);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "DAL Type";
+            label7.AutoSize = true;
+            label7.Location = new Point(570, 14);
+            label7.Name = "label7";
+            label7.Size = new Size(72, 20);
+            label7.TabIndex = 40;
+            label7.Text = "DAL Type";
             // 
-            // FrmCustomer
+            // FormCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 423);
-            this.Controls.Add(this.btnValidate);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtBillingDate);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtBillingAmount);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtPhoneNumber);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCustomerName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cmbCustomerType);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmbDALType);
-            this.Controls.Add(this.label7);
-            this.Name = "Customer";
-            this.Text = "Customer";
-            this.Load += new System.EventHandler(this.FrmCustomer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(823, 529);
+            Controls.Add(btnValidate);
+            Controls.Add(btnAdd);
+            Controls.Add(dataGridView1);
+            Controls.Add(txtAddress);
+            Controls.Add(label6);
+            Controls.Add(txtBillingDate);
+            Controls.Add(label5);
+            Controls.Add(txtBillingAmount);
+            Controls.Add(label4);
+            Controls.Add(txtPhoneNumber);
+            Controls.Add(label3);
+            Controls.Add(txtCustomerName);
+            Controls.Add(label2);
+            Controls.Add(cmbCustomerType);
+            Controls.Add(label1);
+            Controls.Add(cmbDALType);
+            Controls.Add(label7);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormCustomer";
+            Text = "Customer";
+            Load += FrmCustomer_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
         #endregion

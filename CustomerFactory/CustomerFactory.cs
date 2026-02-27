@@ -9,18 +9,37 @@ namespace CustomerFactory
         public static ICustomer Create(string typeOfCustomer)
         {
             ICustomer cust;
-            if (typeOfCustomer == "Lead")
+            switch (typeOfCustomer)
             {
-                cust = new Lead();
-                cust.Validation = new LeadValidation();
+                case "Lead":
+                    cust = new Lead();
+                    cust.Validation = new PhoneValidationDecorator(
+                                        new NameValidationDecorator(
+                                            new BaseValidation<ICustomer>()));
+                    break;
+                case "Customer":
+                    cust = new Customer();
+                    cust.Validation = new AddressValidationDecorator(
+                                        new BillValidationDecorator(
+                                            new PhoneValidationDecorator(
+                                                new NameValidationDecorator(
+                                                    new BaseValidation<ICustomer>()))));
+                    break;
+                case "Self Service":
+                    cust = new SelfService();
+                    cust.Validation = new PhoneValidationDecorator(
+                                        new NameValidationDecorator(
+                                            new BaseValidation<ICustomer>()));
+                    break;
+                case "Home Delivery":
+                    cust = new HomeDelivery();
+                    cust.Validation = new AddressValidationDecorator(
+                                        new NameValidationDecorator(
+                                            new BaseValidation<ICustomer>()));
+                    break;
+                default:
+                    throw new ArgumentException("Invalid customer type");
             }
-            else if (typeOfCustomer == "Customer")
-            {
-                cust = new Customer();
-                cust.Validation = new CustomerValidation();
-            }
-            else
-                throw new ArgumentException("Invalid customer type");
 
             return cust;
         }
