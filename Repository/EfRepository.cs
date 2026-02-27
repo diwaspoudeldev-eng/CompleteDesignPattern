@@ -65,6 +65,7 @@ namespace Repository
 
                     // Use the Factory to create the correct domain object from MiddleLayer (via interface)
                     var domainObj = CustomerFactory.Factory.Create(type);
+                    domainObj.Id = dbEntity.Id;
                     domainObj.CustomerName = dbEntity.CustomerName ?? "";
                     domainObj.PhoneNumber = dbEntity.PhoneNumber ?? "";
                     domainObj.BillAmount = dbEntity.BillAmount ?? 0;

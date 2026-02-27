@@ -58,7 +58,7 @@ namespace Repository
                  using (var connection = new SqlConnection(ConnectionString))
                  {
                      connection.Open();
-                     var cmd = new SqlCommand("SELECT CustomerName, PhoneNumber, BillAmount, BillDate, Address, CustomerType FROM Customers", connection);
+                     var cmd = new SqlCommand("SELECT CustomerID, CustomerName, PhoneNumber, BillAmount, BillDate, Address, CustomerType FROM Customers", connection);
                      using (var reader = cmd.ExecuteReader())
                      {
                          while (reader.Read())
@@ -68,6 +68,7 @@ namespace Repository
                              if (string.IsNullOrEmpty(type)) type = "Customer";
 
                              var customer = CustomerFactory.Factory.Create(type); 
+                             customer.Id = reader["CustomerID"] != DBNull.Value ? Convert.ToInt32(reader["CustomerID"]) : 0;
                              customer.CustomerName = reader["CustomerName"] != DBNull.Value ? reader["CustomerName"].ToString() : "";
                              customer.PhoneNumber = reader["PhoneNumber"] != DBNull.Value ? reader["PhoneNumber"].ToString() : "";
                              customer.BillAmount = reader["BillAmount"] != DBNull.Value ? Convert.ToDecimal(reader["BillAmount"]) : 0;
@@ -91,7 +92,7 @@ namespace Repository
                  {
                      connection.Open();
                      var cmd = new SqlCommand("SELECT CustomerName, PhoneNumber, BillAmount, BillDate, Address FROM Customers WHERE Id = @Id", connection);
-                     cmd.Parameters.AddWithValue("@Id", id);
+                     cmd.Parameters.AddWithValue("@CustomerID", id);
                      using (var reader = cmd.ExecuteReader())
                      {
                          if (reader.Read())

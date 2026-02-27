@@ -7,6 +7,8 @@ namespace Repository
     [Table("Customers")]
     public class CustomerEntity
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         [Key]
         public string CustomerName { get; set; } = string.Empty;
         public string? PhoneNumber { get; set; }

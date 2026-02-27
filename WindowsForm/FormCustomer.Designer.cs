@@ -30,6 +30,10 @@
         {
             btnValidate = new Button();
             btnAdd = new Button();
+            btnAddInmemory = new Button();
+            btnBatchSave = new Button();
+            txtId = new TextBox();
+            label8 = new Label();
             dataGridView1 = new DataGridView();
             txtAddress = new TextBox();
             label6 = new Label();
@@ -69,6 +73,46 @@
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
+            // 
+            // btnAddInmemory
+            // 
+            btnAddInmemory.Location = new Point(619, 104);
+            btnAddInmemory.Margin = new Padding(3, 4, 3, 4);
+            btnAddInmemory.Name = "btnAddInmemory";
+            btnAddInmemory.Size = new Size(83, 83);
+            btnAddInmemory.TabIndex = 41;
+            btnAddInmemory.Text = "Add (Iterator)";
+            btnAddInmemory.UseVisualStyleBackColor = true;
+            btnAddInmemory.Click += btnAddInmemory_Click;
+            // 
+            // btnBatchSave
+            // 
+            btnBatchSave.Location = new Point(729, 94);
+            btnBatchSave.Margin = new Padding(3, 4, 3, 4);
+            btnBatchSave.Name = "btnBatchSave";
+            btnBatchSave.Size = new Size(75, 99);
+            btnBatchSave.TabIndex = 45;
+            btnBatchSave.Text = "Batch Save After Iteration";
+            btnBatchSave.UseVisualStyleBackColor = true;
+            btnBatchSave.Click += btnBatchSave_Click;
+            // 
+            // txtId
+            // 
+            txtId.Location = new Point(650, 60);
+            txtId.Margin = new Padding(3, 4, 3, 4);
+            txtId.Name = "txtId";
+            txtId.Size = new Size(146, 27);
+            txtId.TabIndex = 43;
+            txtId.Text = "0";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(570, 60);
+            label8.Name = "label8";
+            label8.Size = new Size(22, 20);
+            label8.TabIndex = 44;
+            label8.Text = "Id";
             // 
             // dataGridView1
             // 
@@ -172,7 +216,7 @@
             // cmbCustomerType
             // 
             cmbCustomerType.FormattingEnabled = true;
-            cmbCustomerType.Items.AddRange(new object[] { "Lead", "Customer", "Self Service", "Home Delivery" });
+            cmbCustomerType.Items.AddRange(new object[] { "Lead", "Customer", "SelfService", "HomeDelivery" });
             cmbCustomerType.Location = new Point(147, 14);
             cmbCustomerType.Margin = new Padding(3, 4, 3, 4);
             cmbCustomerType.Name = "cmbCustomerType";
@@ -217,6 +261,8 @@
             ClientSize = new Size(823, 529);
             Controls.Add(btnValidate);
             Controls.Add(btnAdd);
+            Controls.Add(btnAddInmemory);
+            Controls.Add(btnBatchSave);
             Controls.Add(dataGridView1);
             Controls.Add(txtAddress);
             Controls.Add(label6);
@@ -232,6 +278,8 @@
             Controls.Add(label1);
             Controls.Add(cmbDALType);
             Controls.Add(label7);
+            Controls.Add(txtId);
+            Controls.Add(label8);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FormCustomer";
             Text = "Customer";
@@ -245,6 +293,8 @@
 
         private System.Windows.Forms.Button btnValidate;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnAddInmemory;
+        private System.Windows.Forms.Button btnBatchSave;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label6;
@@ -260,5 +310,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbDALType;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label8;
     }
 }
