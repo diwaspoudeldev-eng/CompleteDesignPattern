@@ -107,6 +107,7 @@ public class CustomerValidation : IValidation<ICustomer>
 
 public class CustomerBase : ICustomer
 {
+    public int Id { get; set; }
     public string CustomerName { get; set; } = "";
     public string PhoneNumber { get; set; } = "";
     public decimal? BillAmount { get; set; }

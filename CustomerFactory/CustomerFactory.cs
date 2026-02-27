@@ -25,13 +25,13 @@ namespace CustomerFactory
                                                 new NameValidationDecorator(
                                                     new BaseValidation<ICustomer>()))));
                     break;
-                case "Self Service":
+                case "SelfService":
                     cust = new SelfService();
                     cust.Validation = new PhoneValidationDecorator(
                                         new NameValidationDecorator(
                                             new BaseValidation<ICustomer>()));
                     break;
-                case "Home Delivery":
+                case "HomeDelivery":
                     cust = new HomeDelivery();
                     cust.Validation = new AddressValidationDecorator(
                                         new NameValidationDecorator(
