@@ -71,12 +71,17 @@ namespace WindowsForm
 
         private void SetCustomer()
         {
-            cust.Id = string.IsNullOrWhiteSpace(txtId.Text) ? 0 : Convert.ToInt32(txtId.Text);
-            cust.CustomerName = txtCustomerName.Text;
-            cust.PhoneNumber = txtPhoneNumber.Text;
-            cust.BillDate = string.IsNullOrWhiteSpace(txtBillingDate.Text) ? null : Convert.ToDateTime(txtBillingDate.Text);
-            cust.BillAmount = string.IsNullOrWhiteSpace(txtBillingAmount.Text) ? null : Convert.ToDecimal(txtBillingAmount.Text);
-            cust.Address = txtAddress.Text;
+            // Using the Builder Pattern for fluent construction
+            cust = new CustomerBuilder(cmbCustomerType.Text)
+                .WithId(string.IsNullOrWhiteSpace(txtId.Text) ? 0 : Convert.ToInt32(txtId.Text))
+                .WithName(txtCustomerName.Text)
+                .WithPhone(txtPhoneNumber.Text)
+                .WithBilling(
+                    string.IsNullOrWhiteSpace(txtBillingAmount.Text) ? null : Convert.ToDecimal(txtBillingAmount.Text),
+                    string.IsNullOrWhiteSpace(txtBillingDate.Text) ? null : Convert.ToDateTime(txtBillingDate.Text)
+                )
+                .WithAddress(txtAddress.Text)
+                .Build();
         }
 
         private void cmbCustomerType_SelectedIndexChanged(object sender, EventArgs e)
